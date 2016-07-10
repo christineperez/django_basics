@@ -3,7 +3,7 @@ from django.views.generic import View
 
 # Create your views here.
 
-class Index(View)
+class Index(View):
     template_name = 'notes/index.html'
 
     def get_context_data(self):
