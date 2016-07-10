@@ -13,6 +13,8 @@ class Index(View):
         return context
 
     def get(self, request, *args, **kwargs):
+        import pdb
+        pdb.set_trace()
         context = self.get_context_data()
         return render(request, self.template_name, context)
 
